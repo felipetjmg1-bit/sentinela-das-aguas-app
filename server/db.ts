@@ -1,6 +1,6 @@
 import { eq } from "drizzle-orm";
 import { drizzle } from "drizzle-orm/mysql2";
-import { InsertUser, users } from "../drizzle/schema";
+import { InsertUser, users, monitoringPoints, alerts, inspections } from "../drizzle/schema";
 import { ENV } from './_core/env';
 
 let _db: ReturnType<typeof drizzle> | null = null;
@@ -89,4 +89,36 @@ export async function getUserByOpenId(openId: string) {
   return result.length > 0 ? result[0] : undefined;
 }
 
-// TODO: add feature queries here as your schema grows.
+// Monitoring Points queries
+export async function getMonitoringPoints() {
+  const db = await getDb();
+  if (!db) return [];
+  return db.select().from(monitoringPoints);
+}
+
+export async function getMonitoringPointById(id: number) {
+  const db = await getDb();
+  if (!db) return undefined;
+  const result = await db.select().from(monitoringPoints).where(eq(monitoringPoints.id, id)).limit(1);
+  return result[0];
+}
+
+// Alerts queries
+export async function getActiveAlerts() {
+  const db = await getDb();
+  if (!db) return [];
+  return db.select().from(alerts).where(eq(alerts.isActive, true));
+}
+
+export async function getAlertsByLevel(level: string) {
+  const db = await getDb();
+  if (!db) return [];
+  return db.select().from(alerts).where(eq(alerts.alertLevel, level as any));
+}
+
+// Inspections queries
+export async function getInspectionsByMonitoringPoint(pointId: number) {
+  const db = await getDb();
+  if (!db) return [];
+  return db.select().from(inspections).where(eq(inspections.monitoringPointId, pointId));
+}

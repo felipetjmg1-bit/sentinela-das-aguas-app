@@ -4,14 +4,23 @@ import NotFound from "@/pages/NotFound";
 import { Route, Switch } from "wouter";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
+import { useAuth } from "@/_core/hooks/useAuth";
 import Home from "./pages/Home";
+import AdminDashboard from "./pages/AdminDashboard";
+import PublicAlerts from "./pages/PublicAlerts";
 
 function Router() {
-  // make sure to consider if you need authentication for certain routes
+  const { isAuthenticated, user } = useAuth();
+
   return (
     <Switch>
-      <Route path={"/"} component={Home} />
-      <Route path={"/404"} component={NotFound} />
+      <Route path="/" component={Home} />
+      <Route
+        path="/dashboard"
+        component={() => (isAuthenticated ? <AdminDashboard /> : <Home />)}
+      />
+      <Route path="/alerts" component={PublicAlerts} />
+      <Route path="/404" component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />
     </Switch>
