@@ -8,6 +8,8 @@ import { useAuth } from "@/_core/hooks/useAuth";
 import Home from "./pages/Home";
 import AdminDashboard from "./pages/AdminDashboard";
 import PublicAlerts from "./pages/PublicAlerts";
+import InspectionForm from "./pages/InspectionForm";
+import Reports from "./pages/Reports";
 
 function Router() {
   const { isAuthenticated, user } = useAuth();
@@ -20,6 +22,14 @@ function Router() {
         component={() => (isAuthenticated ? <AdminDashboard /> : <Home />)}
       />
       <Route path="/alerts" component={PublicAlerts} />
+      <Route
+        path="/inspection"
+        component={() => (isAuthenticated ? <InspectionForm /> : <Home />)}
+      />
+      <Route
+        path="/reports"
+        component={() => (isAuthenticated ? <Reports /> : <Home />)}
+      />
       <Route path="/404" component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />
