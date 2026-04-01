@@ -410,16 +410,16 @@ Este projeto está licenciado sob a MIT License - veja o arquivo [LICENSE](./LIC
 
 ## 👥 Autores
 
-- **Manus AI** - Arquitetura e Desenvolvimento
-- **Impulso Corp** - Visão e Estratégia
+- **Felipe Marcos de Abreu Aquino** - Arquitetura e Desenvolvimento
+- **Impulso Digital** - Visão e Estratégia
 
 ---
 
 ## 📞 Suporte
 
 Para suporte, entre em contato:
-- Email: suporte@impulsocorp.com.br
-- Website: https://www.impulsocorp.com.br
+- Email: support@impulsodigital.com.br
+- Website: https://www.impulsodigital.com.br
 - GitHub Issues: [Abrir Issue](https://github.com/felipetjmg1-bit/sentinela-das-aguas-app/issues)
 
 ---

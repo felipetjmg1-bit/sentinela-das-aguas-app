@@ -282,7 +282,7 @@ pnpm test:watch
 
 ## 👥 Equipe
 
-**Desenvolvido por**: Manus AI  
+**DeDesenvolvido por: Impulso Digital  
 **Cliente**: Defesa Civil - Estado de Minas Gerais  
 **Responsável Técnico**: Felipe Marcos de Abreu Aquino (CEO - Impulso Digital)
 
@@ -296,7 +296,7 @@ Este projeto é confidencial e propriedade da Defesa Civil do Estado de Minas Ge
 
 ## 📞 Suporte
 
-Para dúvidas ou problemas, entre em contato com a equipe de desenvolvimento através do email: suporte@impulsocorp.com.br
+Para dúvidas ou problemas, entre em contato com a equipe de desenvolvimento através do email: support@impulsodigital.com.br
 
 ---
 
