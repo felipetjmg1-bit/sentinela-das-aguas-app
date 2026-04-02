@@ -108,3 +108,8 @@ temp/
 
 # Webdev artifacts (checkpoint zips, migrations, etc.)
 .webdev/
+
+__pycache__/
+*.pyc
+venv/
+node_modules/
