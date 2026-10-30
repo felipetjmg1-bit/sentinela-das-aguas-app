@@ -113,3 +113,10 @@ __pycache__/
 *.pyc
 venv/
 node_modules/
+
+# Arquivos locais e artefatos de desenvolvimento
+.vite/
+.next/
+.turbo/
+!.env.example
+!.env.local.example
