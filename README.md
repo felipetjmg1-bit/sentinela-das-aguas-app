@@ -1,5 +1,8 @@
 ![Status: Protótipo](https://img.shields.io/badge/Status-Protótipo-blue) | [![Licença MIT](https://img.shields.io/github/license/felipetjmg1-bit/sentinela-das-aguas-app)](LICENSE) | [![Patrocinar](https://img.shields.io/badge/Sponsor-GitHub%20Sponsors-ea4aaa?logo=githubsponsors)](https://github.com/sponsors/felipetjmg1-bit)
 
+<p align="center"><img src="PROJECT-OVERVIEW.svg" alt="Diagrama de funcionalidades de Sentinela das Águas" width="100%"></p>
+
+
 # Sentinela das Águas — Protótipo Web
 
 ## Visão geral
@@ -66,3 +69,6 @@ Este repositório está licenciado sob **MIT**; consulte [LICENSE](LICENSE).
 O desenvolvimento aberto exige tempo para manutenção, documentação, testes, revisão de contribuições e resposta a issues. Se este projeto for útil, considere apoiar a continuidade pelo [GitHub Sponsors](https://github.com/sponsors/felipetjmg1-bit). O apoio não representa promessa de funcionalidades, prazo de entrega ou suporte comercial.
 
 [![Patrocinar felipetjmg1-bit](https://img.shields.io/badge/Patrocinar%20no-GitHub%20Sponsors-ea4aaa?logo=githubsponsors)](https://github.com/sponsors/felipetjmg1-bit)
+
+
+**Empresa responsável:** Impulso Digital Soluções em IA.
