@@ -1,17 +1,17 @@
-![Status: Protótipo](https://img.shields.io/badge/Status-Protótipo-blue) | [![Licença MIT](https://img.shields.io/github/license/felipetjmg1-bit/sentinela-das-aguas-app)](LICENSE) | [![Patrocinar](https://img.shields.io/badge/Sponsor-GitHub%20Sponsors-ea4aaa?logo=githubsponsors)](https://github.com/sponsors/felipetjmg1-bit)
+![Status: Aplicação web em desenvolvimento](https://img.shields.io/badge/Status-Protótipo-blue) | [![Licença MIT](https://img.shields.io/github/license/felipetjmg1-bit/sentinela-das-aguas-app)](LICENSE) | [![Patrocinar](https://img.shields.io/badge/Sponsor-GitHub%20Sponsors-ea4aaa?logo=githubsponsors)](https://github.com/sponsors/felipetjmg1-bit)
 
 <p align="center"><img src="PROJECT-OVERVIEW.svg" alt="Diagrama de funcionalidades de Sentinela das Águas" width="100%"></p>
 
 
-# Sentinela das Águas — Protótipo Web
+# Sentinela das Águas — Aplicação Web
 
 ## Visão geral
 
-O código apresenta um protótipo de aplicação web para alertas de enchentes e monitoramento de pontos de risco: há uma tela pública de alertas com mapa e filtro por localização, e telas de painel, inspeções e relatórios. A Home atual é explicitamente uma página de exemplo. A descrição estratégica do README sobre soberania digital não é a melhor caracterização verificável do produto no código.
+O código apresenta uma aplicação web em desenvolvimento para alertas de enchentes e monitoramento de pontos de risco: há uma tela pública de alertas com mapa e filtro por localização, e telas de painel, inspeções e relatórios. A Home atual é explicitamente uma página de exemplo. A descrição estratégica do README sobre soberania digital não é a melhor caracterização verificável do produto no código.
 
 ## Objetivo e valor
 
-**Problema/escopo:** Protótipo web para visualizar alertas de enchentes e pontos de monitoramento em mapas, com interfaces públicas e operacionais.
+**Problema/escopo:** Aplicação web para visualizar alertas de enchentes e pontos de monitoramento em mapas, com interfaces públicas e operacionais.
 
 **Valor verificável hoje:** o repositório torna explícitos seus artefatos, interfaces e limitações para que mantenedores e contribuidores possam avaliar o que existe sem confundir demonstração, proposta e produção.
 
@@ -49,7 +49,7 @@ Exemplo possível pela interface implementada: abrir `/alerts`, acionar “Minha
 
 ## Estado e limitações
 
-**Maturidade indicada:** Protótipo.
+**Estado de entrega:** MVP web em desenvolvimento.
 
 - Home.tsx identifica seu conteúdo como exemplo e mostra “Example Page”, não a experiência de produto descrita no README.
 - As telas não comprovam que todos os fluxos estejam completos: por exemplo, alertas regionais e mutations de criação/resolução no servidor contêm TODOs; o botão de notificações na página pública não tem handler visível.
